@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Banner.css';
 
 export default function Banner() {
@@ -11,17 +12,17 @@ export default function Banner() {
           </h1>
         </header>
       </div>
-      <a className="author" href="/author">
+      <Link className="author" to="/author">
         Author
-      </a>
+      </Link>
       &nbsp;&nbsp;
-      <a className="tag" href="/tag">
+      <Link className="tag" to="/tag">
         Tag
-      </a>
+      </Link>
       &nbsp;&nbsp;
-      <a className="about" href="/about">
+      <Link className="about" to="/about">
         About
-      </a>
+      </Link>
     </section>
   );
 }

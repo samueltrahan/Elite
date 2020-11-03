@@ -1,21 +1,24 @@
 import React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
-import Header from '../components/header/Header';
-import Banner from '../components/Banner/Banner';
-import Footer from '../components/Footer/Footer';
-import Cards from '../components/Cards/Cards';
-import Pic01 from '../Assets/elite.png';
-import Pic02 from '../Assets/elite-react.png';
-import Pic03 from '../Assets/getting-started.png';
+import Header from './components/header/Header';
+import Banner from './components/Banner/Banner';
+import Footer from './components/Footer/Footer';
+import Cards from './components/Cards/Cards';
+import AboutPage from './Pages/About/AboutPage';
+import Pic01 from './Assets/elite.png';
+import Pic02 from './Assets/elite-react.png';
+import Pic03 from './Assets/getting-started.png';
 
 export default function App() {
   return (
-    <div>
+    <Router>
       <Header />
       <Banner />
       <div className="card-position">
         <Cards
           image={Pic01}
+          path="/about"
           title="About Elite & React"
           paragraph="Elite is a React application template that can be used to display projects or information..."
         />
@@ -31,6 +34,7 @@ export default function App() {
         />
       </div>
       <Footer />
-    </div>
+      <Route exact path="/about" render={() => <AboutPage />} />
+    </Router>
   );
 }
