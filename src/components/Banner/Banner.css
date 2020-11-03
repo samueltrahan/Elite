@@ -3,19 +3,32 @@ section {
   height: 300px;
 }
 
-.banner-heading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .banner-header {
   display: inline-block;
 }
 
 .elite {
   color: white;
-  text-align: center;
   font-family: 'Anton', sans-serif;
-  font-size: 50px;
+  font-size: 70px;
+}
+
+#elite-header {
+  text-align: center;
+}
+
+.author {
+  text-decoration: none;
+  color: red;
+  margin-left: 30px;
+}
+
+.about {
+  text-decoration: none;
+  color: red;
+}
+
+.tag {
+  text-decoration: none;
+  color: red;
 }

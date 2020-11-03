@@ -6,11 +6,24 @@ export default function Banner() {
     <section>
       <div className="bannder-heading">
         <header className="banner-header">
-          <div className="elite">
-            <h1>Elite & React</h1>
+          <div>
+            <h1 id="elite-header" className="elite">
+              Elite & React
+            </h1>
           </div>
         </header>
       </div>
+      <a className="author" href="/author">
+        Author
+      </a>
+      &nbsp;&nbsp;
+      <a className="tag" href="/tag">
+        Tag
+      </a>
+      &nbsp;&nbsp;
+      <a className="about" href="/about">
+        About
+      </a>
     </section>
   );
 }
