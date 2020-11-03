@@ -1,0 +1,21 @@
+section {
+  background-color: black;
+  height: 300px;
+}
+
+.banner-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-header {
+  display: inline-block;
+}
+
+.elite {
+  color: white;
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  font-size: 50px;
+}
