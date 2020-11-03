@@ -1,0 +1,22 @@
+.footer {
+  background-color: black;
+  height: 80px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.copy-right {
+  color: white;
+  margin-top: 20px;
+}
+
+.footer-links {
+  float: right;
+}
+
+.foot {
+  text-decoration: none;
+  color: white;
+}
