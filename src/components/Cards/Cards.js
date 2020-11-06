@@ -4,7 +4,7 @@ import './Cards.css';
 
 export default function Cards({ image, title, paragraph, path }) {
   return (
-    <Link to={path}>
+    <Link className="card-link" to={path}>
       <div className="card">
         <div className="image">
           <img alt="" src={image} style={{ width: '140px' }} />
